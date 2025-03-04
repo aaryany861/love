@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="title" content="Love Website | ">
+    <meta name="github" content="https://github.com/Aoudumber-Bade">
+	<!-- Modernizr -->
+	<script src="static/js/modernizr.js"></script>
+	<!-- Open Sans from Google Webfonts -->
+	<link href='static/css/css.css' rel='stylesheet' type='text/css'>
+	<!-- Main styles file -->
+	<link rel="stylesheet" href="static/css/styles.css">
+	<!-- Icons via Font Awesome -->
+	<link rel="stylesheet" href="static/css/font-awesome.min.css">
+
+	<title>Love Website | </title>
+</head>
+
+<body class="color-scheme-neue">
+	<!-- Animated background -->
+	<canvas id="bg-canvas"></canvas>
+	<div class="bg-img"
+		style="width: 100%; height: 100%; position: fixed; background: url(https://cdn.jsdelivr.net/gh/MasterKeee/picture/love.jpg) no-repeat center center; background-size: cover; ">
+	</div>
+	<!-- First screen -->
+	<div class="splash">
+		<div class="centered-unit">
+			<div class="container">
+				<!-- Main header -->
+				<h1>For us！</h1>
+				<!-- Sub header -->
+				<p class="lead">We have been together for:</p>
+
+				<!-- Countdown -->
+				<div class="countdown circled large">
+					<!-- Days -->
+					<div class="time days">
+						<div class="value">00</div>
+						<div class="unit">Days</div>
+					</div>
+					<!-- Hours -->
+					<div class="time hours">
+						<div class="value">00</div>
+						<div class="unit">Hours</div>
+					</div>
+					<!-- Minutes -->
+					<div class="time minutes">
+						<div class="value">00</div>
+						<div class="unit">Minutes</div>
+					</div>
+					<!-- Seconds -->
+					<div class="time seconds">
+						<div class="value">00</div>
+						<div class="unit">Seconds</div>
+					</div>
+				</div>
+				<!-- Countdown end -->
+			</div>
+		</div>
+	</div>
+
+	<!-- Second screen -->
+	<div class="overlap">
+
+		<!-- Link "Scroll down to learn more" -->
+		<a href="" class="more">Scroll Down <i class="fa fa-chevron-down"></i> More</a>
+
+		<!-- Detailed info -->
+		<div class="container few-words">
+			<div class="row">
+				<!-- First column -->
+				<div class="col col-heading">
+					<!-- Detailed info -->
+					<h2>Our Beautiful Story📚</h2><br>
+				</div>
+				<!-- First column end -->
+
+				<!-- Second column -->
+				<div class="col col-content">
+					<p>📅&nbsp;2019.01.08 - First time i love you bole the but maine trick kiya tha heheehehe  🤝<br></p>
+					<p>📅&nbsp;2019.01.19 - First time close aye and our sweet journey began 🍬<br></p>
+					<p>📅&nbsp;2019.01.21 - First time tumhare liye your favourite song gaya tha and after that ....... 🌃<br></p>
+					<p>📅&nbsp;2019.02.07-14 - Our first Valentine but last mein gussa hogya tha tumse kuch chize dekh ke but ok...👫<br></p>
+					<p>📅&nbsp;2019.05.17 - Uff woh jhagdee shak arurima ko leke shakiiii lalll kuch na kiye kitna suna hai 💋<br></p>
+					<p>📅&nbsp;2019.09.21 - Our deep kiss while watching a movie, which i barely watched because i was too busy watching. 😘🎬<br></p>
+					<p>📅&nbsp;2019.10.05 - Missunderstanding puja mein tshirt dene time phir long jhagraa ... uffff woh daysss ❤️<br></p>
+					<p>📅&nbsp;2019.12.08 - celebrated your birthday but with a twist kisi aur ki baaton pe belive karoge ya meri🍓😗<br></p>
+					<p>📅&nbsp;2020.09.14 - Mere birthday mein bohot special feel karwaye the but tumhare liye sochke kuch bola tha status ke liye but missunderstanding📣🤗<br></p>
+					<p>📅&nbsp;2022.12.08 - 2nd movie date on your birthday vediya movie and beautiful lunch 🎄🎁<br></p>
+					<p>📅&nbsp;2023.09.14 - Birthday wish nhi kiye for the first time whole week ignore  🍰🎉<br></p>
+					<p>📅&nbsp;2025.03.04 - Story is still onnnnnnnn <br></p>
+				</div>
+				<!-- Second column end -->
+
+			</div>
+		</div>
+		<!-- Detailed info block end -->
+
+		<!-- Footer -->
+		<div class="footer">
+			<div class="container" style="text-align: center;">
+				皖ICP备2023031200-1号
+			</div>
+		</div>
+		<!-- Footer end -->
+	</div>
+
+	<div id="copy">
+		<p class="text-center text-white text-sm">Made by <a
+			href="https://www.instagram.com/aoudumber.dev/reels/#">Your Ullu</a></p>
+	  </div>
+
+	<!-- JavaScripts -->
+
+	<script src="static/js/jquery.js"></script>
+	<script src="static/js/countdown.js"></script>
+	<script src="static/js/bezierCanvas.js"></script>
+	<script src="static/js/notifyMe.js"></script>
+
+	<script type="text/javascript">
+		$().ready(function () {
+
+			// Activate countdownTimer plugin on a '.countdown' element
+			$(".countdown").countdownTimer({
+				// Set the end date for the countdown
+				endTime: new Date("January 19, 2019 18:30:00 UTC+0800")
+			});
+
+			// Activate notifyMe plugin on a '#notifyMe' element	
+			$("#notifyMe").notifyMe();
+
+			// Activate bezierCanvas plugin on a #bg-canvas element
+			$("#bg-canvas").bezierCanvas({
+				maxStyles: 3,
+				maxLines: 80,
+				strokeWidth: 0.5,
+				lineSpacing: 0.07,
+				spacingVariation: 0.07,
+				colorBase: { r: 100, g: 120, b: 200 },
+				colorVariation: { r: 50, g: 50, b: 50 },
+				globalAlpha: 0.4,
+				globalSpeed: 200,
+			});
+		});
+	</script>
+
+</body>
+
+</html>
